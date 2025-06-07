@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c61awmbxs2the" path="res://codigo/coin.gd" id="1_4wvuw"]
 [ext_resource type="Texture2D" uid="uid://lr1cxqk35p33" path="res://MyAssets/Rocky Roads/Objects/coin_small_gold.png" id="1_71fvh"]
-[ext_resource type="AudioStream" uid="uid://bnxqoc76puoko" path="res://musica/SonidoMoneda.mp3" id="3_q482r"]
+[ext_resource type="AudioStream" uid="uid://b4xd4csyxr6w2" path="res://musica/Sonida-Moneda.mp3" id="3_q482r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4wvuw"]
 atlas = ExtResource("1_71fvh")
