@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=3 uid="uid://dh0r6ty4l4tkm"]
+
+[ext_resource type="Script" uid="uid://b6em361nd5lax" path="res://codigo/enemigo.gd" id="1_7hb1w"]
+[ext_resource type="Texture2D" uid="uid://5rk8gs20eqis" path="res://MyAssets/Rocky Roads/Enemies/bird.png" id="2_7hb1w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aegna"]
+atlas = ExtResource("2_7hb1w")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uali7"]
+atlas = ExtResource("2_7hb1w")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urjao"]
+atlas = ExtResource("2_7hb1w")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kw626"]
+atlas = ExtResource("2_7hb1w")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a1jod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aegna")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uali7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urjao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kw626")
+}],
+"loop": true,
+"name": &"bird",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fupmh"]
+size = Vector2(12, 14)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_7hb1w")
+
+[node name="Pajaro" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_a1jod")
+animation = &"bird"
+autoplay = "bird"
+
+[node name="ray_cast_2_derecha" type="RayCast2D" parent="."]
+target_position = Vector2(16, 0)
+
+[node name="ray_cast_2_izquierda" type="RayCast2D" parent="."]
+position = Vector2(-1, -1)
+target_position = Vector2(-16, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_fupmh")

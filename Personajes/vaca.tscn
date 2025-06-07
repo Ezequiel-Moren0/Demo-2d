@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://ddtvju7bmb8ne"]
+
+[ext_resource type="Texture2D" uid="uid://bq34sr6ukm8er" path="res://MyAssets/Farm RPG FREE 16x16 - Tiny Asset Pack/Farm Animals/Female Cow Brown.png" id="1_fajmf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qeeo5"]
+atlas = ExtResource("1_fajmf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wu451"]
+atlas = ExtResource("1_fajmf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evvbn"]
+atlas = ExtResource("1_fajmf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5t56x"]
+atlas = ExtResource("1_fajmf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xbpn0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qeeo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wu451")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evvbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5t56x")
+}],
+"loop": true,
+"name": &"Female Cow",
+"speed": 5.0
+}]
+
+[node name="Vaca" type="AnimatedSprite2D"]
+scale = Vector2(0.812, 0.735)
+sprite_frames = SubResource("SpriteFrames_xbpn0")
+animation = &"Female Cow"
+frame_progress = 0.782671

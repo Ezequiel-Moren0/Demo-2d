@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxwtkuu2bwda5"]
+
+[ext_resource type="Texture2D" uid="uid://dnywqtecv3hxv" path="res://MyAssets/Farm RPG FREE 16x16 - Tiny Asset Pack/Farm Animals/Baby Chicken Yellow.png" id="1_dugod"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_726h4"]
+atlas = ExtResource("1_dugod")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbp75"]
+atlas = ExtResource("1_dugod")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50f50"]
+atlas = ExtResource("1_dugod")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lf0iy"]
+atlas = ExtResource("1_dugod")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_02dqe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_726h4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbp75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50f50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lf0iy")
+}],
+"loop": true,
+"name": &"Baby Chicken",
+"speed": 5.0
+}]
+
+[node name="Gallina" type="AnimatedSprite2D"]
+scale = Vector2(1.34373, 0.937503)
+sprite_frames = SubResource("SpriteFrames_02dqe")
+animation = &"Baby Chicken"
+autoplay = "Baby Chicken"
+frame_progress = 0.141013

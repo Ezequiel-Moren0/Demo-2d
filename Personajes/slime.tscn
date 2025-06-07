@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bvsa684ev8u6l"]
+
+[node name="Slime" type="AnimatedSprite2D"]

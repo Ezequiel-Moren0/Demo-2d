@@ -1,0 +1,78 @@
+[gd_scene load_steps=12 format=3 uid="uid://cr0fus3ivmjrk"]
+
+[ext_resource type="Script" uid="uid://c61awmbxs2the" path="res://codigo/coin.gd" id="1_4wvuw"]
+[ext_resource type="Texture2D" uid="uid://lr1cxqk35p33" path="res://MyAssets/Rocky Roads/Objects/coin_small_gold.png" id="1_71fvh"]
+[ext_resource type="AudioStream" uid="uid://bnxqoc76puoko" path="res://musica/SonidoMoneda.mp3" id="3_q482r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wvuw"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q482r"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xytx2"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abbrr"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i431"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ly2f"]
+atlas = ExtResource("1_71fvh")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fcx0y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wvuw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q482r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xytx2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abbrr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i431")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ly2f")
+}],
+"loop": true,
+"name": &"coin_gold_small",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hsanw"]
+radius = 5.0
+
+[node name="Coin" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_4wvuw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_fcx0y")
+animation = &"coin_gold_small"
+autoplay = "coin_gold_small"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hsanw")
+
+[node name="sonidoMoneda" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_q482r")
+volume_db = -23.216
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="sonidoMoneda" to="." method="_on_sonido_moneda_finished"]
