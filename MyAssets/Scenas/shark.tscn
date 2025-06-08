@@ -51,8 +51,8 @@ texture_filter = 1
 shape = SubResource("CircleShape2D_px3ts")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(7, -11)
-scale = Vector2(2.61719, 3.53125)
+position = Vector2(5, -12)
+scale = Vector2(2.52734, 3.14063)
 sprite_frames = SubResource("SpriteFrames_cosck")
 animation = &"Shark"
 autoplay = "Shark"

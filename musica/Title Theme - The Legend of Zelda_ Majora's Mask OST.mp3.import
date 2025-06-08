@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2fhmxikumf23"
+path="res://.godot/imported/Title Theme - The Legend of Zelda_ Majora's Mask OST.mp3-9cac1eafa21da4bd03af45c9d0d6707e.mp3str"
+
+[deps]
+
+source_file="res://musica/Title Theme - The Legend of Zelda_ Majora's Mask OST.mp3"
+dest_files=["res://.godot/imported/Title Theme - The Legend of Zelda_ Majora's Mask OST.mp3-9cac1eafa21da4bd03af45c9d0d6707e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b78q4sq6b2l2n"
+path="res://.godot/imported/Duel of the Fates.mp3-4b2f44ed2a0e5dcaadd01945e88a5000.mp3str"
+
+[deps]
+
+source_file="res://musica/Duel of the Fates.mp3"
+dest_files=["res://.godot/imported/Duel of the Fates.mp3-4b2f44ed2a0e5dcaadd01945e88a5000.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
