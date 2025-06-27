@@ -1665,7 +1665,7 @@ animations = [{
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_qex6y")]
 texture_filter = 1
-position = Vector2(5296, 320)
+position = Vector2(112, 328)
 collision_layer = 2
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2095,30 +2095,35 @@ text = " Lo conseguiste!"
 [node name="audio1" type="AudioStreamPlayer2D" parent="Musica"]
 position = Vector2(337, 259)
 stream = ExtResource("44_r51ut")
+volume_db = -11.216
 autoplay = true
 max_distance = 600.0
 
 [node name="audio2" type="AudioStreamPlayer2D" parent="Musica"]
 position = Vector2(1720, 240)
 stream = ExtResource("58_c1v8l")
+volume_db = -10.196
 autoplay = true
 max_distance = 688.0
 
 [node name="audio3" type="AudioStreamPlayer2D" parent="Musica"]
 position = Vector2(3304, 232)
 stream = ExtResource("59_padur")
+volume_db = -10.196
 autoplay = true
 max_distance = 850.0
 
 [node name="audio4" type="AudioStreamPlayer2D" parent="Musica"]
 position = Vector2(4824, 360)
 stream = ExtResource("60_padur")
+volume_db = -12.235
 autoplay = true
 max_distance = 660.0
 
 [node name="audio5" type="AudioStreamPlayer2D" parent="Musica"]
 position = Vector2(6272, -48)
 stream = ExtResource("61_j8l0b")
+volume_db = -10.196
 autoplay = true
 max_distance = 1020.0
 
