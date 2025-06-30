@@ -1665,7 +1665,7 @@ animations = [{
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_qex6y")]
 texture_filter = 1
-position = Vector2(112, 328)
+position = Vector2(109, 331)
 collision_layer = 2
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2134,6 +2134,16 @@ offset_left = 1.0
 offset_top = 6.0
 offset_right = 67.0
 offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("58_opni3")
+theme_override_font_sizes/font_size = 34
+text = "00:00"
+
+[node name="label_vida" type="Label" parent="CanvasLayer"]
+offset_left = 2.0
+offset_top = 26.0
+offset_right = 68.0
+offset_bottom = 50.0
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("58_opni3")
 theme_override_font_sizes/font_size = 34
